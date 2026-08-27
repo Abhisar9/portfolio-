@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Abhisar Abhijit Padalkar, focused on systems where finance meets machine learning.">
+  <title>Abhisar Abhijit Padalkar</title>
+  <style>
+    :root {
+      --background: #fbfaf7;
+      --text: #202124;
+      --muted: #666f7a;
+      --border: #dad4c8;
+      --accent: #075e8f;
+      --sidebar-width: 35vw;
+      --sidebar-min: 320px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: auto;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    p,
+    ul,
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+
+    .layout {
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: max(var(--sidebar-width), var(--sidebar-min));
+      min-width: var(--sidebar-min);
+      padding: 64px 48px;
+      border-right: 1px solid var(--border);
+      overflow: auto;
+    }
+
+    .sidebar-inner {
+      max-width: 360px;
+    }
+
+    .content {
+      margin-left: max(var(--sidebar-width), var(--sidebar-min));
+      padding: 60px 48px 56px;
+    }
+
+    main {
+      max-width: 650px;
+    }
+
+    h1 {
+      margin-bottom: 14px;
+      font-size: 2rem;
+      line-height: 1.15;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 46px 0 20px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--border);
+      font-size: 1rem;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-bottom: 3px;
+      font-size: 1rem;
+      line-height: 1.45;
+      font-weight: 650;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .tagline {
+      margin-bottom: 18px;
+      color: #333942;
+      font-size: 1.08rem;
+      line-height: 1.55;
+    }
+
+    .links {
+      margin-bottom: 36px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .skills {
+      margin-top: 34px;
+    }
+
+    .skills h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    .skill-group {
+      margin-bottom: 16px;
+    }
+
+    .skill-group p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .skill-group strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .item {
+      margin-bottom: 28px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .meta {
+      margin-bottom: 9px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      :root {
+        --sidebar-width: 38vw;
+        --sidebar-min: 280px;
+      }
+
+      .sidebar {
+        padding: 48px 34px;
+      }
+
+      .content {
+        padding: 48px 34px 44px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        font-size: 15.5px;
+      }
+
+      .sidebar {
+        position: static;
+        width: auto;
+        min-width: 0;
+        height: auto;
+        padding: 36px 22px 28px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .sidebar-inner {
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 34px 22px 40px;
+      }
+
+      main {
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 1.85rem;
+      }
+
+      h2 {
+        margin-top: 38px;
+      }
+
+      .links {
+        margin-bottom: 28px;
+      }
+
+      .skills {
+        margin-top: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Intro and skills">
+      <div class="sidebar-inner">
+        <!-- Header -->
+        <header>
+          <h1>Abhisar Abhijit Padalkar</h1>
+          <p class="tagline">I build systems where finance meets machine learning.</p>
+          <p class="links">
+            <a href="mailto:abhisarp27@gmail.com">Email</a>
+            &middot;
+            <a href="https://linkedin.com/in/abhisar-padalkar27">LinkedIn</a>
+            &middot;
+            <a href="https://github.com/">GitHub</a>
+            &middot;
+            Pune, Maharashtra
+          </p>
+        </header>
+
+        <!-- Skills -->
+        <section class="skills" id="skills" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills</h2>
+
+          <div class="skill-group">
+            <strong>Languages</strong>
+            <p>Python, C++</p>
+          </div>
+
+          <div class="skill-group">
+            <strong>AI/ML Frameworks</strong>
+            <p>PyTorch, TensorFlow, scikit-learn, LangChain, RAG Pipelines</p>
+          </div>
+
+          <div class="skill-group">
+            <strong>Databases</strong>
+            <p>MySQL, MongoDB, PostgreSQL, ChromaDB</p>
+          </div>
+
+          <div class="skill-group">
+            <strong>Infra &amp; Tools</strong>
+            <p>FastAPI, Docker, AWS, Elasticsearch, Kibana, Git</p>
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <!-- Education -->
+        <section id="education" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+
+          <div class="item">
+            <h3>London School of Economics and Political Science</h3>
+            <p class="meta">LSE Summer School, ME200: Mathematical Methods in Computational Finance · June 2026 - July 2026</p>
+          </div>
+
+          <div class="item">
+            <h3>Savitribai Phule Pune University</h3>
+            <p class="meta">B.E. Computer Engineering · SGPA: 9.1 (July 2026), Combined GPA: 8.35</p>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Experience</h2>
+
+          <div class="item">
+            <h3>Software Developer Intern</h3>
+            <p class="meta">Finacus Solutions Pvt. Ltd., Mumbai · Jan 2026 - July 2026</p>
+            <ul>
+              <li>Building a Loyalty Rewards and Payment Processing System in C# (.NET) with real-time transaction workflows and event-driven payment processing at scale.</li>
+              <li>Integrated Elasticsearch for high-speed search/indexing across transaction and user data; built Kibana dashboards for real-time monitoring.</li>
+              <li>Worked on core payment pipelines ensuring data consistency and fault tolerance across distributed services.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Software Developer Intern (Summer)</h3>
+            <p class="meta">Finacus Solutions Pvt. Ltd., Mumbai · June 2024 - July 2024</p>
+            <ul>
+              <li>Developed a dynamic AML (Anti-Money Laundering) application using React.js to enhance fraud detection and compliance workflows.</li>
+              <li>Integrated RESTful APIs with backend systems for real-time customer risk profiling and seamless data exchange.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Projects</h2>
+
+          <div class="item">
+            <h3>Equities Risk Analytics Engine</h3>
+            <p class="meta">Python, NumPy, Pandas, Jupyter</p>
+            <ul>
+              <li>Building a portfolio risk analytics engine as the core of a planned B2B risk-analytics API for fintech platforms and independent advisors.</li>
+              <li>Implemented historical/parametric VaR, CVaR/Expected Shortfall, max drawdown, rolling volatility, and correlation analysis across a multi-sector equity portfolio.</li>
+              <li>Designed a daily validation pipeline backtesting risk estimates against realized returns, plus historical stress-testing for tail risk.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>RBI TUDF / CIBIL Data Processing Pipeline</h3>
+            <p class="meta">Python, Regex, RBI TUDF Specification · Delivered as freelance work, March 2026</p>
+            <ul>
+              <li>Built a bulk decoder for RBI-mandated TUDF files - a proprietary TLV-encoded format banks/NBFCs use to submit credit data to CIBIL, with no delimiters, making manual extraction infeasible at scale.</li>
+              <li>Wrote a custom TLV parser handling three encoding variants with regex lookahead on segment headers to isolate consumer, identity, address, and trade-line segments.</li>
+              <li>Output: 50+ structured columns per consumer (PAN, loan details, overdue amounts, written-off/suit status) ready for credit risk analysis and ML pipelines.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Cyber Threat Intelligence Dashboard using RAG</h3>
+            <p class="meta">FastAPI, LangChain, Elasticsearch, ChromaDB, React</p>
+            <ul>
+              <li>Engineered an end-to-end RAG pipeline using FAISS (MiniLM embeddings) to ground LLM-generated security insights in real-time threat reports, CVE databases, and incident logs.</li>
+              <li>Achieved 0.88 MRR, 0.84 Precision@5, and 0.87 Recall@5 on retrieval quality — confirmed the semantic search was surfacing the right documents.</li>
+              <li>Reduced false-positive threat detections from 29% to 2% by adding a validation step that cross-checks the LLM's output against retrieved evidence before it's shown.</li>
+              <li>Parses 10MB files in under 5 seconds and returns LLM-generated threat summaries in 8–10 seconds end-to-end.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>AI-Powered Financial Document Intelligence Platform</h3>
+            <p class="meta">FastAPI, FinBERT, ChromaDB, PyTorch, Sentence Transformers</p>
+            <ul>
+              <li>Built a platform to extract sentiment/financial insights from documents and correlate with live stock price movements via the Alpha Vantage API.</li>
+              <li>Enabled semantic competitor analysis and document comparison via vector similarity search.</li>
+              <li>Developed an interactive dashboard to visualize sentiment trends and support investment decisions.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Freelance Projects -->
+        <section id="freelance-projects" aria-labelledby="freelance-projects-heading">
+          <h2 id="freelance-projects-heading">Freelance Projects</h2>
+
+          <div class="item">
+            <h3>NACH File Decoder Pipeline</h3>
+            <p class="meta">May 2026</p>
+            <ul>
+              <li>Banks drop encrypted monthly NACH batch files with no usable structure for manual parsing at scale.</li>
+              <li>Built a decoder that ingests a full month's folder (~300 files) and converts them into structured data immediately, replacing a process that was previously impossible to do by hand.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Universal Data Import Tool</h3>
+            <p class="meta">January 2026</p>
+            <ul>
+              <li>Built a direct import pipeline ingesting Excel, CSV, and JSON files straight into a SQL database.</li>
+              <li>Replaced manual, error-prone data entry with a single automated import step.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>FastAPI Deposit &amp; Account Management System</h3>
+            <p class="meta">October 2025</p>
+            <ul>
+              <li>Built an end-to-end deposit application for a factory client: customer onboarding, account creation, and automated receipt generation.</li>
+              <li>Replaced a manual, paper-based account management process.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" aria-labelledby="certifications-heading">
+          <h2 id="certifications-heading">Certifications</h2>
+
+          <ul>
+            <li>Deep Learning Specialisation - Andrew Ng, DeepLearning.AI - April 2025</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
